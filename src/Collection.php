@@ -258,7 +258,7 @@ class Collection implements ArrayAccess, Countable, IteratorAggregate, JsonSeria
      * @param  callable|null  $callback
      * @return static
      */
-    public function filter(callable $callback = null)
+    public function filter(?callable $callback = null)
     {
         if ($callback) {
             $return = [];
